@@ -22,7 +22,9 @@
     Space Complexity: O(n^2) for the returned pattern.
 */
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <string>
 using namespace std;
 
 class Solution {
@@ -51,3 +53,17 @@ public:
         return result;
     }
 };
+
+
+int main(){
+    solution sol;
+    int n = 5;
+
+    vector<string> result = sol.pyramidOfStars(n);
+
+    for (const string& row : result) {
+        cout << row << '\n';
+    }
+
+    return 0;
+}
